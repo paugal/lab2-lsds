@@ -20,6 +20,6 @@ public class TwitterLanguageFilterApp {
         SparkConf conf = new SparkConf().setAppName("Twitter Filter");
         JavaSparkContext sparkContext = new JavaSparkContext(conf);
         // Load input
-        JavaRDD<String> sentences = sparkContext.textFile(input);
+        JavaRDD<String> sentencess = sparkContext.textFile(input);
     }
 }
