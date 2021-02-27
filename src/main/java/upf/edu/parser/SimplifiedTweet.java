@@ -1,4 +1,4 @@
-package upf.edu;
+package upf.edu.parser;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -9,9 +9,6 @@ import java.util.Optional;
 
 public class SimplifiedTweet {
 
-  /*private static ?? parser = new ????;*/
-
-  //Este Json nos sirve para parsear
   private static JsonParser parser = new JsonParser();
 
   private final Long tweetId;			  // the id of the tweet ('id')
@@ -96,45 +93,6 @@ public class SimplifiedTweet {
 
     }else
       return Optional.empty();
-
-    /*
-    //Miramos que el json tenga todos los elementos y lo guardamos como simplified tweet
-    if(final_tweet.has("id")) {
-      tweetId = final_tweet.get("id").getAsLong();
-      tweetId = null;
-      System.out.println("TweetId: " + tweetId);
-    }
-
-    if(final_tweet.has("text")) {
-      text = final_tweet.get("text").getAsString();
-      //System.out.println(text);
-    }
-
-     if (final_tweet.has("lang")) {
-       language = final_tweet.get("lang").getAsString().replace("\n", " ");
-       //System.out.println(language);
-     }
-
-     if (final_tweet.has("timestamp_ms")){
-      timestampMs = final_tweet.get("timestamp_ms").getAsLong();
-      //System.out.println(timestampMs);
-    }
-    if(final_tweet.has("user"))
-    {
-      JsonObject user = final_tweet.get("user").getAsJsonObject();
-      if(user.has("id")) {
-        userId = user.get("id").getAsLong();
-        //System.out.println(userId);
-      }
-      if(user.has("name")){
-        userName = user.get("name").getAsString();
-        //System.out.println(userName);
-      }
-
-    }
-
-    */
-
 
     SimplifiedTweet simplified_tweet = new SimplifiedTweet(tweetId, text, userId, userName, language, timestampMs);
 
