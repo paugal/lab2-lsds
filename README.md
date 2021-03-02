@@ -32,10 +32,10 @@ RESULTS:
 
 ## Exercise 5
 - To run locally  
-  spark-submit --class upf.edu.MostRetweetedApp --master local[2] target/lab2-1.0-SNAPSHOT.jar es ./output/run3 ./input
+  spark-submit --class upf.edu.MostRetweetedApp --master local[2] target/lab2-1.0-SNAPSHOT.jar ./output/run3 ./input
   /
 - To run in emr  
-  --class upf.edu.MostRetweetedApp s3://edu.upf.ldsd2021.lab2.grp201.team8/jars/lab2-1.0-SNAPSHOT.jar es s3://edu.upf.ldsd2021.lab2.grp201.team8/output/run3 s3://edu.upf.ldsd2021.lab2.grp201.team8/input/
+  --class upf.edu.MostRetweetedApp s3://edu.upf.ldsd2021.lab2.grp201.team8/jars/lab2-1.0-SNAPSHOT.jar s3://edu.upf.ldsd2021.lab2.grp201.team8/output/run3 s3://edu.upf.ldsd2021.lab2.grp201.team8/input/
 
 RESULTS:  (in part-00000)  
 (851,(Manel Navarro Music,Así que el año pasado quedo último con un gallo y este año gana una gallina... #Eurovision https://t.co/EfvXQbb8jp))  
