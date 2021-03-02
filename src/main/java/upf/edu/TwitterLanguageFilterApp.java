@@ -39,6 +39,12 @@ public class TwitterLanguageFilterApp {
 
         long end = System.currentTimeMillis();
         long elapsedTime = end - start;
+        File file = new File(outputDir+"/results","results.txt");
+        file.getParentFile().mkdirs();
+        file.createNewFile();
+        FileWriter fw = new FileWriter(file);
+        fw.write("Time to process tweets in "+lang+" is "+ Long.toString(elapsedTime) + "ms");
+        fw.close();
         System.out.println("Time to process tweets in "+lang+" is "+ Long.toString(elapsedTime) + "ms");
     }
 }
