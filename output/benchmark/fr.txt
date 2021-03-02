@@ -1,0 +1,1 @@
+Time to process tweets in fr is 75381 ms

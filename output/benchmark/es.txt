@@ -1,0 +1,1 @@
+Time to process tweets in es is 76766 ms

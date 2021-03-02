@@ -39,6 +39,7 @@ public class TwitterLanguageFilterApp {
 
         long end = System.currentTimeMillis();
         long elapsedTime = end - start;
+        System.out.println("Time to process tweets in "+lang+" is "+ Long.toString(elapsedTime) + "ms");
     }
 }
 
