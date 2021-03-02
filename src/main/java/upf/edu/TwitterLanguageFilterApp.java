@@ -8,6 +8,8 @@ import upf.edu.parser.SimplifiedTweet;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
 import java.io.FileWriter;
@@ -37,16 +39,6 @@ public class TwitterLanguageFilterApp {
 
         long end = System.currentTimeMillis();
         long elapsedTime = end - start;
-        writeToFile(Long.toString(elapsedTime), outputDir, lang);
-    }
-
-    private static void writeToFile(String elapsedTime, String outputDir, String filename) throws IOException {
-        String path = outputDir+"/"+filename+".txt";
-        System.out.println(path);
-        BufferedWriter writer = new BufferedWriter(new FileWriter(path));
-        writer.write(elapsedTime);
-
-        writer.close();
     }
 }
 
